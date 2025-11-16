@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="antlr-4.9.1-complete">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/opencsv-5.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/antlr-4.13.2-complete.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
