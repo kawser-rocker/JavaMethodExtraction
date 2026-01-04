@@ -30,9 +30,18 @@ public class JavaFQNAPIExtractor {
         }
 
         try (DirectoryStream<Path> projects = Files.newDirectoryStream(rootDir)) {
-
+            Files.createDirectories(apiListsDir);
             for (Path project : projects) {
                 if (Files.isDirectory(project)) {
+
+                    String projectName = project.getFileName().toString();
+                    Path outputFile = apiListsDir.resolve(projectName + ".txt");
+
+                    if (Files.exists(outputFile)) {
+                        System.out.println("Skipping (already processed): " + projectName);
+                        continue;
+                    }
+
                     System.out.println("\n📁 Project: " + project.getFileName());
                     // list of API Calls
                     ArrayList<String> apiCalls = new ArrayList<>();
