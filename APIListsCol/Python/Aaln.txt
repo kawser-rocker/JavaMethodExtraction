@@ -1,0 +1,17 @@
+len
+range
+pathlib.Path.replace
+urllib.urlopen
+json.loads
+str
+url.split
+str.join
+bs4.BeautifulSoup.find_all
+p6.getText
+flask.Flask.route
+twilioInput.split
+inputString.__len__
+firstLetters.lower
+twilioInput.lower
+twilio.twiml.Response.sms
+flask.Flask.run
